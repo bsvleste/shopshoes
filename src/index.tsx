@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import { GlobalStyle } from './styles/global';
-
+/*
 createServer({
   models: {
     stock: Model,
@@ -94,6 +94,7 @@ createServer({
       return schema.create('stock', data);
     }); */
     // rota do produto
+/*
     this.get('/products/:id', (schema, request) => {
       const { id } = request.params;
       return schema.db.products.find(id);
@@ -104,7 +105,7 @@ createServer({
       return schema.create('product', data);
     });
   },
-});
+});*/
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
