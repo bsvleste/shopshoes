@@ -29,7 +29,7 @@ export function Home() {
 
   useEffect(() => {
     api.get('produtos')
-      .then((response) => setProducts(response.data.attributes));
+      .then((response) => setProducts(response.data));
   }, []);
  
   async function handleAddProduct(id:number) {
