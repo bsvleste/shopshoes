@@ -30,8 +30,9 @@ export function Home() {
   useEffect(() => {
     api.get('produtos')
       .then((response) => setProducts(response.data));
+    
   }, []);
- 
+ console.log(products)
   async function handleAddProduct(id:number) {
     await addProduct(id);
   }
