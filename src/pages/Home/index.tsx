@@ -28,7 +28,7 @@ export function Home() {
   }, {} as CartItemsAmount);
 
   useEffect(() => {
-    api.get('products')
+    api.get('produtos')
       .then((response) => setProducts(response.data.products));
   }, []);
   async function handleAddProduct(id:number) {
