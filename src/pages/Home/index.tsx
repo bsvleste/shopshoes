@@ -29,8 +29,9 @@ export function Home() {
 
   useEffect(() => {
     api.get('produtos')
-      .then((response) => setProducts(response.data.products));
+      .then((response) => setProducts(response.data.attributes));
   }, []);
+  console.log(response.data)
   async function handleAddProduct(id:number) {
     await addProduct(id);
   }
